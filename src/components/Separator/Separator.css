@@ -1,0 +1,23 @@
+.separatorContainer {
+  position: relative;
+  z-index: 2;
+}
+
+.separatorContainer.marginTop {
+  margin-top: 300px;
+}
+
+.separatorContainer.marginBottom {
+  margin-bottom: 150px;
+}
+
+.separator {
+  height: 15px;
+  width: 105vw;
+  background: var(--primary-color);
+  -webkit-box-shadow: 0px 0px 50px 16px rgba(251, 232, 108, 1);
+  -moz-box-shadow: 0px 0px 50px 16px rgba(251, 232, 108, 1);
+  box-shadow: 0px 0px 30px 16px rgba(251, 232, 108, 1);
+  transform: rotate(-15deg);
+  filter: blur(3px);
+}

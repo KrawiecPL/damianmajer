@@ -1,0 +1,52 @@
+.selectInput {
+  position: relative;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 14px;
+  border-radius: 5px;
+  border: 1px solid #ffffff33;
+  background: #25252366;
+  outline: none;
+  color: var(--secondary-color);
+  font-size: 14px;
+  cursor: pointer;
+  transition: all 0.1s ease-in-out;
+}
+.selectInput.active {
+  border-radius: 5px 5px 0 0;
+}
+
+.selectInput .placeholder {
+  color: #ffffff99;
+  user-select: none;
+}
+
+.selectInput .selectArrow {
+  color: #ffffff99;
+  font-size: 20px;
+  transition: all 0.2s ease-in-out;
+}
+
+.selectInput .selectArrow.active {
+  transform: rotate(180deg);
+}
+
+.selectInput .selectList {
+  position: absolute;
+  width: calc(100% + 2px);
+  height: fit-content;
+  max-height: 170px;
+  left: -1px;
+  top: calc(100% + 1px);
+  background: var(--background-color);
+  color: var(--primary-color);
+  transition: all 0.3s ease-in-out;
+  visibility: hidden;
+  opacity: 0;
+}
+
+.selectInput .selectList.active {
+  visibility: visible;
+  opacity: 1;
+}

@@ -1,0 +1,18 @@
+.specialButton {
+  width: fit-content;
+  border-radius: 4px;
+  color: var(--background-color);
+  padding: 20px 60px;
+  background: var(--primary-color);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-size: 24px;
+  font-weight: 600;
+  clip-path: polygon(50% 0%, 100% 0, 100% 50%, 80% 100%, 0 100%, 0% 60%, 0 0);
+  transition: all 0.1s ease-in-out;
+}
+
+.specialButton:hover {
+  background: #fff199;
+}

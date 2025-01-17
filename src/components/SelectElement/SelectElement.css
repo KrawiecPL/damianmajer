@@ -1,0 +1,16 @@
+.selectElement {
+  padding: 12px 14px;
+  color: var(--primary-color);
+  background: var(--background-color);
+  border-left: 3px solid transparent;
+  width: 100%;
+  transition: all 0.2s ease-in-out;
+}
+
+.selectElement .text {
+  user-select: none;
+}
+
+.selectElement:hover {
+  border-left: 3px solid var(--primary-color);
+}

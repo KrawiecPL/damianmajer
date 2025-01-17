@@ -1,0 +1,34 @@
+.metamorphosesSection {
+  width: var(--site-width);
+  display: flex;
+  flex-direction: column;
+  gap: 32px;
+  margin-top: 60px;
+}
+
+.metamorphosesSection .metamorphosesTopContainer {
+  width: 500px;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-end;
+  align-self: flex-end;
+  gap: 12px;
+  text-align: right;
+}
+
+.metamorphosesSection .metamorphosesBottomContainer {
+  width: 100%;
+  position: relative;
+}
+
+.metamorphosesSection .metamorphosesBottomContainer .slick-slider {
+  display: flex;
+  align-items: center;
+  gap: 20px;
+}
+
+.metamorphosesSection .metamorphosesBottomContainer .slick-slider .slick-track {
+  position: relative;
+  display: flex;
+  gap: 32px;
+}

@@ -1,0 +1,64 @@
+.decor {
+  position: absolute;
+  height: 200px;
+  width: fit-content;
+}
+
+.decor.introup {
+  right: 0;
+  top: 0;
+  transform: translate(100%, -50%);
+}
+
+.decor.introdown {
+  position: relative;
+  transform: translate(-90%, 0);
+}
+
+.decor.test {
+  top: -300px;
+  left: 0;
+}
+
+.decor.aboutmeup {
+  right: 0;
+  top: 0;
+  transform: translate(90%, -230%) rotate(-15deg);
+}
+
+.decor.aboutmebottom {
+  /* position: relative; */
+  bottom: -110%;
+  /* left: 0; */
+  transform: translate(-90%, 0) rotate(-195deg);
+}
+
+.decor.servicesRight {
+  left: 110%;
+  top: 50%;
+  transform: translateY(-50%);
+}
+
+.decor.servicesLeft {
+  right: 110%;
+  top: 50%;
+  transform: translateY(-50%);
+}
+
+.decor.achieLeft {
+  height: auto;
+  width: 115px;
+  left: 0;
+  top: -10px;
+  object-fit: cover;
+  object-position: top;
+}
+
+.decor.achieRight {
+  height: auto;
+  width: 115px;
+  right: 0;
+  top: -10px;
+  object-fit: cover;
+  object-position: top;
+}

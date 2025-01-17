@@ -1,0 +1,34 @@
+.gallerySection {
+  width: 100vw;
+  background: var(--primary-color);
+  display: flex;
+  justify-content: center;
+}
+
+.gallerySection .galleryContainer {
+  width: var(--site-width);
+  display: flex;
+  flex-direction: column;
+  gap: 32px;
+  margin-bottom: 40px;
+  margin-top: 25px;
+}
+
+.gallerySection .galleryContainer .sliderImg {
+  height: 280px;
+  width: fit-content !important;
+  object-fit: contain;
+  border-radius: 10px;
+}
+
+.gallerySection .galleryContainer .slick-slider {
+  display: flex;
+  align-items: center;
+  gap: 20px;
+}
+
+.gallerySection .galleryContainer .slick-slider .slick-track {
+  position: relative;
+  display: flex;
+  gap: 32px;
+}

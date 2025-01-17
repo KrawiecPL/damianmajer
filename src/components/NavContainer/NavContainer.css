@@ -1,0 +1,8 @@
+.navContainer {
+  display: flex;
+  gap: 60px;
+}
+
+.navContainer.footer {
+  gap: 40px;
+}

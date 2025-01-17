@@ -1,0 +1,21 @@
+.servicesSection {
+  width: var(--site-width);
+  display: flex;
+  flex-direction: column;
+  gap: 32px;
+  margin-top: 60px;
+}
+
+.servicesSection .servicesTopContainer {
+  width: 500px;
+  display: flex;
+  flex-direction: column;
+  gap: 12px;
+}
+
+.servicesSection .servicesBottomContainer {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  gap: 40px;
+}
