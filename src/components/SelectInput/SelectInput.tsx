@@ -24,7 +24,7 @@ function SelectInput({
 }: SelectInputType) {
   const [activeSelect, setActiveSelect] = useState(false);
 
-  const element = inputElements.find((item) => item.value == activeElement);
+  const element = inputElements.find((item) => item.value === activeElement);
 
   return (
     <div

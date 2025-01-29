@@ -46,3 +46,10 @@
   margin-top: 32px;
   align-self: flex-end;
 }
+
+
+@media screen and (max-width: 1200px) {
+  .serviceTile{
+    width: calc(70% + 50px);
+  } 
+}

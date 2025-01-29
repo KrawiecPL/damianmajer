@@ -89,8 +89,8 @@
 }
 
 .contactSection
-  .contactContainer
-  .contactLeftContainer
+.contactContainer
+.contactLeftContainer
   .contactForm
   .inlineInputs
   input {
@@ -121,7 +121,7 @@
   .contactRightContainer
   .contentContainer
   .contentTopContainer {
-  display: flex;
+    display: flex;
   flex-direction: column;
   gap: 20px;
 }
@@ -131,41 +131,68 @@
   .contactRightContainer
   .contentContainer
   .contentBottomContainer {
-  display: flex;
-  flex-direction: column;
-  gap: 20px;
-}
-
-.contactSection
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+  }
+  
+  .contactSection
   .contactContainer
   .contactRightContainer
   .contentContainer
   .contentBottomContainer
   .contentElement {
-  display: flex;
-  align-items: center;
-  gap: 20px;
-  color: var(--primary-color);
-  font-size: 15px;
-}
-
-.contactSection
+    display: flex;
+    align-items: center;
+    gap: 20px;
+    color: var(--primary-color);
+    font-size: 15px;
+  }
+  
+  .contactSection
   .contactContainer
   .contactRightContainer
   .contentContainer
   .contentBottomContainer
   .contentElement:hover
   .elementLabel {
-  text-decoration: underline;
-}
-
-.contactSection
+    text-decoration: underline;
+  }
+  
+  .contactSection
   .contactContainer
   .contactRightContainer
   .contentContainer
   .contentBottomContainer
   .contentElement
   .elementIcon {
-  font-size: 30px;
-  width: 30px;
+    font-size: 30px;
+    width: 30px;
+  }
+
+
+@media screen and (max-width: 1200px) {
+  .contactSection .contactContainer{
+    flex-direction: column;
+    align-items: center;
+    width: fit-content;
+    padding: 40px 50px;
+    margin: 0 200px;
+    margin-bottom: 70px;
+    gap: 50px;
+  } 
+  
+  .contactSection .contactContainer .contactLeftContainer,
+  .contactSection .contactContainer .contactRightContainer{
+    width: fit-content;
+    padding: 0 100px;
+  }
+
+  .contactSection
+    .contactContainer
+    .contactLeftContainer
+    .contactForm
+    .inlineInputs {
+    flex-direction: column;
+  }
 }

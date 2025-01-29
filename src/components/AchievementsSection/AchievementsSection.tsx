@@ -121,6 +121,7 @@ function AchievementsSection({ id }: AchievementsSectionProps) {
           <Decor image={LeftDecor} location="achieLeft" />
           {filteredAchievements.map((achievement, index) => (
             <AchievementTile
+              key={index}
               image={achievement.image}
               title={achievement.title}
               category={achievement.category}

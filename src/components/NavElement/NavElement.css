@@ -18,3 +18,10 @@
 .navElement.footer:hover {
   color: var(--secondary-color);
 }
+
+
+@media screen and (max-width: 1200px) {
+  .navElement.footer{
+    font-size: 16px;
+  } 
+}
