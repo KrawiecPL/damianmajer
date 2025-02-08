@@ -1,6 +1,6 @@
 {
   "files": {
-    "main.css": "/damianmajer/static/css/main.5dde41c1.css",
+    "main.css": "/damianmajer/static/css/main.6de4074a.css",
     "main.js": "/damianmajer/static/js/main.ca247fdf.js",
     "static/media/Medal10.webp": "/damianmajer/static/media/Medal10.b194850754e4c99fbe78.webp",
     "static/media/Medal18.webp": "/damianmajer/static/media/Medal18.eb8ca22c8ed0cd7d2b0f.webp",
@@ -34,11 +34,11 @@
     "static/media/slick.ttf": "/damianmajer/static/media/slick.c94f7671dcc99dce43e2.ttf",
     "index.html": "/damianmajer/index.html",
     "static/media/slick.woff": "/damianmajer/static/media/slick.295183786cd8a1389865.woff",
-    "main.5dde41c1.css.map": "/damianmajer/static/css/main.5dde41c1.css.map",
+    "main.6de4074a.css.map": "/damianmajer/static/css/main.6de4074a.css.map",
     "main.ca247fdf.js.map": "/damianmajer/static/js/main.ca247fdf.js.map"
   },
   "entrypoints": [
-    "static/css/main.5dde41c1.css",
+    "static/css/main.6de4074a.css",
     "static/js/main.ca247fdf.js"
   ]
 }
