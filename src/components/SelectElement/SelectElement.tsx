@@ -1,8 +1,9 @@
+import { SetStateAction } from "react";
 import "./SelectElement.css";
 
 type SelectElementType = {
   children: string;
-  value?: string | number;
+  value?: SetStateAction<string>;
   onClick: React.Dispatch<React.SetStateAction<string>>;
 };
 
@@ -15,7 +16,7 @@ function SelectElement({ children, value, onClick }: SelectElementType) {
   return (
     <div
       data-value={value}
-      onClick={(e) => handleElementClick(e)}
+      onClick={() => value !== undefined && onClick(value)}
       className="selectElement"
     >
       <div className="text">{children}</div>

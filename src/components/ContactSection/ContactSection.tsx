@@ -7,31 +7,48 @@ import {
   faInstagram,
   faTiktok,
 } from "@fortawesome/free-brands-svg-icons";
-import { faEnvelope, faPhone } from "@fortawesome/free-solid-svg-icons";
+import {
+  faEnvelope,
+  faPaperPlane,
+  faPhone,
+} from "@fortawesome/free-solid-svg-icons";
 import SelectInput from "../SelectInput/SelectInput";
 import SelectElement from "../SelectElement/SelectElement";
-import { useState } from "react";
+import { SetStateAction, useState } from "react";
 
 type ContactSectionProps = {
   id: string;
 };
 
-const InputElements = [
+type InputElement = {
+  value: SetStateAction<string>;
+  text: string;
+};
+
+const InputElements: InputElement[] = [
   {
-    value: 1,
-    text: "Test1",
+    value: "1",
+    text: "Treningi personalne",
   },
   {
-    value: 2,
-    text: "Test2",
+    value: "2",
+    text: "Treningi online",
   },
   {
-    value: 3,
-    text: "Test3",
+    value: "3",
+    text: "Plany żywieniowe",
   },
   {
-    value: 4,
-    text: "Test4",
+    value: "4",
+    text: "Plany treningowe",
+  },
+  {
+    value: "5",
+    text: "Nauka pozowania",
+  },
+  {
+    value: "6",
+    text: "Inny",
   },
 ];
 
@@ -73,6 +90,10 @@ function ContactSection({ id }: ContactSectionProps) {
               id="message"
               placeholder="Treść wiadomości"
             ></textarea>
+            <div className="sendButton disabled">
+              Wyślij{" "}
+              <FontAwesomeIcon icon={faPaperPlane} className="buttonIcon" />
+            </div>
           </div>
         </div>
         <div className="contactRightContainer">

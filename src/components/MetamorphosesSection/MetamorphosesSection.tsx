@@ -22,6 +22,24 @@ function MetamorphosesSection({ id }: MetamorphosesSectionProps) {
     nextArrow: <SliderArrow />,
     prevArrow: <SliderArrow prev />,
     adaptiveHeight: true,
+    arrows: true,
+    responsive: [
+      {
+        breakpoint: 1200,
+        settings: {
+          arrows: false,
+          dots: true,
+        },
+      },
+      {
+        breakpoint: 1000,
+        settings: {
+          slidesToShow: 1,
+          arrows: false,
+          dots: true,
+        },
+      },
+    ],
   };
 
   return (

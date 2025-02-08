@@ -55,15 +55,76 @@
   pointer-events: none;
 }
 
-@media screen and (max-width: 1200px) {
-  .introductorySection .leftContainer{
-    max-width: 60%;
+@media only screen and (max-width: 1200px) {
+  .introductorySection {
+    padding: 0 50px;
   }
 
-  .introductorySection .rightContainer{
+  .introductorySection .leftContainer {
+    max-width: 55%;
+  }
+
+  .introductorySection .rightContainer {
     position: absolute;
-    transform: translateX(250px);
+    transform: translateX(100px);
     right: 0;
     top: 0;
-  } 
+  }
+}
+
+@media only screen and (max-width: 1000px) {
+  .introductorySection .leftContainer {
+    max-width: 50%;
+  }
+  .introductorySection .rightContainer .backGradient {
+    width: 550px;
+    height: 550px;
+  }
+}
+
+@media only screen and (max-width: 819px) {
+  .introductorySection .leftContainer {
+    max-width: 48%;
+  }
+
+  .introductorySection .leftContainer .text {
+    font-size: 13px;
+  }
+
+  .introductorySection .leftContainer .specialButton {
+    font-size: 16px;
+    padding: 15px 40px;
+  }
+
+  .introductorySection .rightContainer .backGradient {
+    width: 520px;
+    height: 520px;
+  }
+}
+
+@media only screen and (max-width: 600px) {
+  .introductorySection .rightContainer {
+    transform: translateX(130px);
+  }
+}
+
+@media only screen and (max-width: 450px) {
+  .introductorySection {
+    margin-bottom: 60px;
+  }
+
+  .introductorySection .rightContainer {
+    display: none;
+    top: 100px;
+    right: 100px;
+  }
+
+  .introductorySection .leftContainer {
+    max-width: 100%;
+  }
+
+  .introductorySection .rightContainer img {
+    width: auto;
+    height: 100%;
+  }
 }

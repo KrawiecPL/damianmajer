@@ -63,3 +63,96 @@
   background-position: center;
   margin-top: 100px;
 }
+
+@media only screen and (max-width: 1200px) {
+  .aboutMeSection {
+    padding: 0 50px;
+  }
+}
+
+@media only screen and (max-width: 900px) {
+  .aboutMeSection {
+    padding: 0;
+  }
+
+  .aboutMeSection .aboutMeMainContainer {
+    justify-content: space-between;
+    width: fit-content;
+    padding: 0 32px;
+    gap: 40px;
+  }
+
+  .aboutMeSection .aboutMeMainContainer .aboutMeRightContainer {
+    width: fit-content;
+  }
+
+  .aboutMeSection
+    .aboutMeMainContainer
+    .aboutMeRightContainer
+    .rightContainerImage {
+    width: 120px;
+    height: 800px;
+    background-position: 43% 0 !important;
+  }
+
+  .aboutMeSection
+    .aboutMeMainContainer
+    .aboutMeRightContainer
+    .rightContainerImage.leftImage {
+    background-position: 68% 0 !important;
+  }
+}
+
+@media only screen and (max-width: 700px) {
+  .aboutMeSection {
+    padding: 0;
+  }
+
+  .aboutMeSection .aboutMeTopContainer {
+    width: 100%;
+    margin: 0 30px;
+    padding: 0 12px;
+  }
+
+  .aboutMeSection .aboutMeMainContainer {
+    justify-content: space-between;
+    width: fit-content;
+    padding: 0 16px;
+    gap: 16px;
+  }
+
+  .aboutMeSection .aboutMeMainContainer .aboutMeLeftContainer .text {
+    font-size: 13px;
+  }
+
+  .aboutMeSection .aboutMeMainContainer .aboutMeRightContainer {
+    align-items: baseline;
+    width: fit-content;
+  }
+
+  .aboutMeSection
+    .aboutMeMainContainer
+    .aboutMeRightContainer
+    .rightContainerImage {
+    width: 80px;
+    height: 500px;
+    background-position: 43% 0 !important;
+  }
+
+  .aboutMeSection
+    .aboutMeMainContainer
+    .aboutMeRightContainer
+    .rightContainerImage.rightImage {
+    margin-top: 30px;
+  }
+}
+
+@media only screen and (max-width: 340px) {
+  .aboutMeSection .aboutMeMainContainer .aboutMeLeftContainer .text {
+    text-align: center;
+  }
+
+  .aboutMeSection .aboutMeMainContainer .aboutMeRightContainer {
+    display: none;
+  }
+}

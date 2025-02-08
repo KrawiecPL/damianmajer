@@ -6,3 +6,15 @@ header {
   max-width: var(--site-width);
   width: 100%;
 }
+
+@media only screen and (max-width: 1200px) {
+  header {
+    padding: 0 50px;
+  }
+}
+
+@media only screen and (max-width: 450px) {
+  header {
+    margin-bottom: 50px;
+  }
+}

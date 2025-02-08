@@ -62,3 +62,97 @@
   object-fit: cover;
   object-position: top;
 }
+
+@media only screen and (max-width: 1500px) {
+  .decor.introup {
+    display: none;
+  }
+}
+
+@media only screen and (max-width: 1300px) {
+  .decor.introdown {
+    transform: translate(-85%, 10%);
+  }
+}
+
+@media only screen and (max-width: 1200px) {
+  .decor.servicesLeft {
+    right: 105%;
+  }
+
+  .decor.servicesRight {
+    left: 105%;
+  }
+
+  .decor.aboutmebottom {
+    bottom: -100%;
+  }
+}
+
+@media only screen and (max-width: 1100px) {
+  .decor.aboutmebottom {
+    bottom: -90%;
+  }
+
+  .decor.achieLeft,
+  .decor.achieRight {
+    display: none;
+  }
+}
+
+@media only screen and (max-width: 900px) {
+  .decor.aboutmebottom {
+    bottom: -35%;
+    transform: translate(-80%, 0) rotate(-195deg);
+  }
+
+  .decor.introdown {
+    transform: translate(-85%, 0);
+  }
+}
+
+@media only screen and (max-width: 850px) {
+  .decor.aboutmebottom {
+    bottom: -45%;
+    transform: translate(-85%, 0) rotate(-195deg);
+  }
+}
+
+@media only screen and (max-width: 799px) {
+  .decor.aboutmebottom {
+    bottom: -50%;
+    transform: translate(-90%, 0) rotate(-195deg);
+  }
+}
+
+@media only screen and (max-width: 600px) {
+  .decor.introdown {
+    transform: translate(-93%, 0);
+  }
+
+  .decor.aboutmeup {
+    display: none;
+  }
+
+  .decor.aboutmebottom {
+    bottom: -75%;
+  }
+}
+
+@media only screen and (max-width: 500px) {
+  .decor.aboutmebottom {
+    /* bottom: -70%;
+    transform: translate(-90%, 0) rotate(-195deg); */
+    display: none;
+  }
+
+  .decor.aboutmeup {
+    display: none;
+  }
+}
+
+@media only screen and (max-width: 450px) {
+  .decor.introdown {
+    display: none;
+  }
+}

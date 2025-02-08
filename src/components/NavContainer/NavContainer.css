@@ -6,3 +6,10 @@
 .navContainer.footer {
   gap: 40px;
 }
+
+@media only screen and (max-width: 770px) {
+  .navContainer {
+    flex-wrap: wrap;
+    justify-content: center;
+  }
+}

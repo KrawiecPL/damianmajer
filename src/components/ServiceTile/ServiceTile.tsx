@@ -11,6 +11,7 @@ type ServiceTileProps = {
   decorImg: string;
   decorLocation: string;
   children: React.ReactNode;
+  isMobile: boolean;
 };
 
 function ServiceTile({
@@ -21,6 +22,7 @@ function ServiceTile({
   decorImg,
   decorLocation,
   children,
+  isMobile,
 }: ServiceTileProps) {
   return (
     <div className="serviceTile">
@@ -28,15 +30,17 @@ function ServiceTile({
         <img src={image} alt="Zdjęcie usługi" />
       </div>
       <div className="rightContainer">
-        <HeadingText size="small" text={title} />
-        <Text weight="regular" className="tileText">
-          {children}
-        </Text>
+        <div className="descContainer">
+          <HeadingText size="small" text={title} />
+          <Text weight="regular" className="tileText">
+            {children}
+          </Text>
+        </div>
         <div className="rate">
           <HeadingText size="small" text={`${price}/${period}`} />
         </div>
       </div>
-      <Decor image={decorImg} location={decorLocation} />
+      {!isMobile && <Decor image={decorImg} location={decorLocation} />}
     </div>
   );
 }

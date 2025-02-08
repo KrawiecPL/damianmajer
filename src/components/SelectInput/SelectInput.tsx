@@ -1,11 +1,11 @@
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import "./SelectInput.css";
 import { faAngleDown } from "@fortawesome/free-solid-svg-icons";
-import { useState } from "react";
+import { SetStateAction, useState } from "react";
 import SelectElement from "../SelectElement/SelectElement";
 
 type InputElement = {
-  value: string | number;
+  value: SetStateAction<string>;
   text: string;
 };
 

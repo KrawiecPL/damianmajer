@@ -1,4 +1,5 @@
 .achievementsSection {
+  position: relative;
   width: var(--site-width);
   height: fit-content;
   display: flex;
@@ -48,6 +49,7 @@
   display: flex;
   justify-content: center;
   align-items: center;
+  overflow: hidden;
 }
 
 .achievementsSection .achievementsBottomContainer .bottomContainerWrapper {
@@ -60,8 +62,34 @@
   padding-bottom: 150px;
 }
 
-@media screen and (max-width: 1200px){
-  .achievementsSection .achievementsTopContainer{
+@media only screen and (max-width: 1200px) {
+  .achievementsSection .achievementsTopContainer {
     margin-right: 100px;
+  }
+}
+
+@media only screen and (max-width: 1000px) {
+  .achievementsSection {
+    margin-top: 90px;
+  }
+
+  .achievementsSection .achievementsTopContainer {
+    width: 100vw;
+    align-items: center;
+    align-self: center;
+    text-align: center;
+    margin-right: 0;
+    padding: 0 20px;
+  }
+
+  .achievementsSection .buttonsContainer {
+    justify-content: center;
+    margin-left: 0;
+  }
+}
+
+@media only screen and (max-width: 325px) {
+  .achievementsSection .buttonsContainer {
+    gap: 12px;
   }
 }

@@ -23,12 +23,34 @@ function GallerySection({ id }: GallerySectionProps) {
     nextArrow: <SliderArrow negative />,
     prevArrow: <SliderArrow negative prev />,
     variableWidth: true,
+    arrows: true,
+    responsive: [
+      {
+        breakpoint: 1200,
+        settings: {
+          dots: true,
+          arrows: false,
+        },
+      },
+      {
+        breakpoint: 700,
+        settings: {
+          dots: true,
+          arrows: false,
+          variableWidth: false,
+          centerPadding: "0px",
+          centerMode: true,
+        },
+      },
+    ],
   };
 
   return (
     <div className="gallerySection" id={id}>
       <div className="galleryContainer">
-        <HeadingText size="medium" text="Galeria" invert />
+        <div className="galleryTitle">
+          <HeadingText size="medium" text="Galeria" invert />
+        </div>
         <Slider {...settings}>
           {images.map((img, index) => (
             <img

@@ -14,15 +14,42 @@
 }
 
 .servicesSection .servicesBottomContainer {
+  position: relative;
   width: 100%;
   display: flex;
   flex-direction: column;
   gap: 40px;
 }
 
-@media screen and (max-width: 1200px) {
-  .servicesSection{
+@media only screen and (max-width: 1200px) {
+  .servicesSection {
     width: 100vw;
     padding: 0 50px;
+  }
+}
+
+@media only screen and (max-width: 600px) {
+  .servicesSection {
+    padding: 0;
+    align-items: center;
+  }
+
+  .servicesSection .servicesTopContainer {
+    align-items: center;
+  }
+
+  .servicesSection .servicesTopContainer .topText {
+    text-align: center;
+    padding: 0 12px;
+  }
+}
+
+@media only screen and (max-width: 500px) {
+  .servicesSection {
+    padding-top: 30px;
+  }
+
+  .servicesSection .servicesTopContainer {
+    width: 100%;
   }
 }

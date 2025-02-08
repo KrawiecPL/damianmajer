@@ -1,4 +1,5 @@
 import "./App.css";
+import { useState, useEffect } from "react";
 import Header from "../Header/Header";
 import IntroductorySection from "../IntroductorySection/IntroductorySection";
 import Separator from "../Separator/Separator";
@@ -11,17 +12,35 @@ import GallerySection from "../GallerySection/GallerySection";
 import AchievementsSection from "../AchievementsSection/AchievementsSection";
 
 function App() {
+  const [isMobile, setIsMobile] = useState(false);
+
+  const handleResize = () => {
+    if (window.innerWidth <= 1000) {
+      setIsMobile(true);
+    } else {
+      setIsMobile(false);
+    }
+  };
+
+  useEffect(() => {
+    if (window.innerWidth <= 1000) {
+      setIsMobile(true);
+    } else {
+      setIsMobile(false);
+    }
+    window.addEventListener("resize", handleResize);
+  }, []);
   return (
     <div className="App">
-      <Header />
-      <IntroductorySection />
+      <Header isMobile={isMobile} />
+      <IntroductorySection isMobile={isMobile} />
       <Separator bottomMargin></Separator>
       <AboutMeSection id="aboutme" />
       <Separator topMargin></Separator>
       <AchievementsSection id="achievements" />
       <GallerySection id="gallery" />
       <MetamorphosesSection id="metamorphoses" />
-      <ServicesSection id="services" />
+      <ServicesSection id="services" isMobile={isMobile} />
       <ContactSection id="contact" />
       <Footer />
     </div>

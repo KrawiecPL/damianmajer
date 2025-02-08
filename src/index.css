@@ -39,7 +39,7 @@ html {
 body {
   background: var(--background-color);
   color: var(--secondary-color);
-  overflow-x: hidden;
+  overflow-x: hidden !important;
 }
 
 a {

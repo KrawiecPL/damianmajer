@@ -13,7 +13,11 @@ import {
 } from "@fortawesome/free-brands-svg-icons";
 import Decor from "../Decor/Decor";
 
-function IntroductorySection() {
+type IntroductorySectionProps = {
+  isMobile: boolean;
+};
+
+function IntroductorySection({ isMobile }: IntroductorySectionProps) {
   return (
     <div className="introductorySection">
       <Decor image={DecorImage} location="introup" />
@@ -27,20 +31,23 @@ function IntroductorySection() {
           zapragnąłem dzielić się swoim doświadczeniem z innymi.
         </Text>
         <SpecialButton text="Metamorfozy" href="metamorphoses" />
-        <SocialMediaContainer>
-          <SocialMediaButton
-            href="https://facebook.com/damian.majer.988"
-            icon={faFacebook}
-          />
-          <SocialMediaButton
-            href="https://instagram.com/trener_personalny_chojnice"
-            icon={faInstagram}
-          />
-          <SocialMediaButton
-            href="https://tiktok.com/@damiantiiktok"
-            icon={faTiktok}
-          />
-        </SocialMediaContainer>
+        {!isMobile && (
+          <SocialMediaContainer>
+            <SocialMediaButton
+              href="https://facebook.com/damian.majer.988"
+              icon={faFacebook}
+            />
+            <SocialMediaButton
+              href="https://instagram.com/trener_personalny_chojnice"
+              icon={faInstagram}
+            />
+            <SocialMediaButton
+              href="https://tiktok.com/@damiantiiktok"
+              icon={faTiktok}
+            />
+          </SocialMediaContainer>
+        )}
+
         <Decor image={DecorImage} location="introdown" />
       </div>
       <div className="rightContainer">

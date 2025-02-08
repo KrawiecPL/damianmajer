@@ -21,3 +21,31 @@
   transform: rotate(-15deg);
   filter: blur(3px);
 }
+
+@media only screen and (max-width: 900px) {
+  .separatorContainer.marginTop {
+    margin-top: 200px;
+  }
+}
+
+@media only screen and (max-width: 800px) {
+  .separatorContainer.marginTop {
+    margin-top: 250px;
+  }
+}
+
+@media only screen and (max-width: 600px) {
+  .separatorContainer.marginTop {
+    margin-top: 150px;
+  }
+
+  .separatorContainer.marginBottom {
+    margin-bottom: 80px;
+  }
+}
+
+@media only screen and (max-width: 450px) {
+  .separatorContainer.marginBottom {
+    margin-bottom: 50px;
+  }
+}

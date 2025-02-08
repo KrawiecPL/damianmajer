@@ -3,20 +3,40 @@ import Text from "../Text/Text";
 import "./AboutMeSection.css";
 import DecorImage from "../../assets/images/aboutmesectiondecor.png";
 import Decor from "../Decor/Decor";
+import { useState, useEffect } from "react";
 
 type AboutMeSectionProps = {
   id: string;
 };
 
 function AboutMeSection({ id }: AboutMeSectionProps) {
+  const [isMobile, setIsMobile] = useState(false);
+
+  const handleResize = () => {
+    if (window.innerWidth <= 700) {
+      setIsMobile(true);
+    } else {
+      setIsMobile(false);
+    }
+  };
+
+  useEffect(() => {
+    if (window.innerWidth <= 700) {
+      setIsMobile(true);
+    } else {
+      setIsMobile(false);
+    }
+    window.addEventListener("resize", handleResize);
+  }, []);
+
   return (
     <div id={id} className="aboutMeSection">
       <Decor image={DecorImage} location="aboutmeup" />
       <div className="aboutMeTopContainer">
         <HeadingText size="medium" text="O mnie" />
         <Text weight="semibold">
-          Pasja, doświadczenie podparte osiągnięciami oraz zdrowa relacja ciałai
-          umysłu.
+          Pasja, doświadczenie podparte osiągnięciami oraz zdrowa relacja ciała
+          i umysłu.
         </Text>
       </div>
       <div className="aboutMeMainContainer">
@@ -40,7 +60,7 @@ function AboutMeSection({ id }: AboutMeSectionProps) {
           <Decor image={DecorImage} location="aboutmebottom" />
         </div>
         <div className="aboutMeRightContainer">
-          <div className="rightContainerImage leftImage"></div>
+          {!isMobile && <div className="rightContainerImage leftImage"></div>}
           <div className="rightContainerImage rightImage"></div>
         </div>
       </div>
